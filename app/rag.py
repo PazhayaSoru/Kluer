@@ -74,7 +74,7 @@ class KnowRag:
       password=NEO4J_PASSWORD
       )
     
-    self.entity_chain = entity_chain =  extract_prompt | self.llm.with_structured_output(Entities)
+    self.entity_chain = extract_prompt | self.llm.with_structured_output(Entities)
 
     
 
